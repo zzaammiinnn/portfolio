@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #111;
+    color: white;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: rgb(164, 140, 3);
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(164, 140, 3), black);
+    color: white;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    padding: 60px 10%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* About */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Projects */
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background: rgb(164, 140, 3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background: rgb(164, 140, 3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .projects .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .projects .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
